@@ -63,6 +63,8 @@ public class Balle : MonoBehaviour
             transform.position = JsonUtility.FromJson<Vector3>(positionJSON);
         }
         peutJouer = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
